@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "0d282b30d51928acd47b2b7326832787",
+    "content-hash": "3dba8339b46ae94e543bb17566686e4a",
     "packages": [
         {
             "name": "brick/math",
@@ -1044,6 +1044,65 @@
                 }
             ],
             "time": "2023-12-03T19:50:20+00:00"
+        },
+        {
+            "name": "joelbutcher/laravel-archivable",
+            "version": "v1.4.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/joelbutcher/laravel-archivable.git",
+                "reference": "5b53d79738a1b3524a0b499905b92768905cb41f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/joelbutcher/laravel-archivable/zipball/5b53d79738a1b3524a0b499905b92768905cb41f",
+                "reference": "5b53d79738a1b3524a0b499905b92768905cb41f",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/database": "^7.0|^8.0|^9.0|^10.0|^11.0",
+                "illuminate/support": "^7.0|^8.0|^9.0|^10.0|^11.0",
+                "php": "^7.3|^8.0"
+            },
+            "require-dev": {
+                "illuminate/pagination": "^7.0|^8.0|^9.0|^10.0|^11.0",
+                "orchestra/testbench": "^6.3|^7.0|^8.0|^9.0",
+                "phpunit/phpunit": "^8.4|^9.1|^10.5"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "LaravelArchivable\\LaravelArchivableServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "LaravelArchivable\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Joel Butcher",
+                    "email": "joel@joelbutcher.co.uk"
+                }
+            ],
+            "description": "An archivable trait package for Laravel Eloquent models",
+            "homepage": "https://github.com/joelbutcher/laravel-archivable",
+            "keywords": [
+                "laravel",
+                "laravel-archivable"
+            ],
+            "support": {
+                "issues": "https://github.com/joelbutcher/laravel-archivable/issues",
+                "source": "https://github.com/joelbutcher/laravel-archivable"
+            },
+            "time": "2024-02-28T09:33:46+00:00"
         },
         {
             "name": "laravel/framework",

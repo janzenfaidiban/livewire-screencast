@@ -39,24 +39,7 @@
                         </thead>
                         <tbody>
                             @foreach ($posts as $post)
-                            <tr wire:key="{{ $post->id }}" class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
-                                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                                    {{ $post->title }}
-                                </th>
-                                <td class="px-6 py-4">
-                                    {{ str($post->content)->words(5) }}
-                                </td>
-                                <td class="px-6 py-4">
-                                    <button 
-                                        type="button" 
-                                        wire:click="delete({{ $post->id }})"
-                                        class="text-sm leading-6 px-2 rounded-sm text-red-100 bg-red-600 hover:bg-red-500"
-                                        wire:confirm="Are you sure you want to delete this post?"
-                                    >
-                                        Delete
-                                    </button>
-                                </td>
-                            </tr>                
+                                <livewire:post-row :key="$post->id" :$post />
                             @endforeach
                         </tbody>
                     </table>

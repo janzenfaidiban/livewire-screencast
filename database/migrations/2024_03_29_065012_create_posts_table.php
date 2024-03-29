@@ -16,6 +16,8 @@ return new class extends Migration
             $table->string('title');
             $table->string('content');
             $table->timestamps();
+            // $table->archivedAt(); // Macro
+            $table->softDeletes(); // This adds the 'deleted_at' column
         });
     }
 

@@ -47,6 +47,16 @@ creating layout
 php artisan livewire:layout
 ```
 
+### Using laravel-archivable
+
+See documentation here https://github.com/joelbutcher/laravel-archivable
+
+Install the package using these commands
+
+```
+composer require joelbutcher/laravel-archivable
+```
+
 ### Screenshots
 
 Show Posts

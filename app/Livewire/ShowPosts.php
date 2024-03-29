@@ -8,15 +8,20 @@ use Livewire\Component;
 class ShowPosts extends Component
 {
 
-    public function delete(Post $post)
+    // public function delete(Post $post)
+    // {
+    //     $post->delete();
+    // }
+
+    public function forceDelete(Post $post)
     {
-        $post->delete();
+        $post->forceDelete();
     }
 
     public function render()
     {
         return view('livewire.show-posts', [
-            'posts' => Post::all(),
+            'posts' => Post::withTrashed()->get(),
         ]);
     }
 }
