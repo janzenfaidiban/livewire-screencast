@@ -46,3 +46,15 @@ creating layout
 ```
 php artisan livewire:layout
 ```
+
+### Screenshots
+
+Show Posts
+
+
+<img src="public/jf-screenshots/livewire-show-posts.png">
+
+Create new Post
+
+
+<img src="public/jf-screenshots/livewire-create-post.png">
